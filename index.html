@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>MVVM大作业</title>
+</head>
+<body>
+    <header>MVVM大作业</header>
+    <div id="app">
+        <input type="text" v-model="message">
+        <div></div>
+        {{message}}
+        <br>
+        <input type="text" v-model="a.ahdaiasd">
+        <div></div>
+        <ui></ui>
+        {{a.ahdaiasd}}
+    </div>
+<script src="watcher.js"></script>
+<script src="compile.js"></script>
+<script src="MVVM.js"></script>
+<script src="observer.js"></script>
+<script>
+    // const {MVVM} = require("../src/MVVM");
+    let vm =new MVVM({
+        el:'#app',
+        data:{
+            message:'输入以进行改动',
+            a:{
+                ahdaiasd:'赵浩博',
+            }
+        }
+    })
+</script>
+
+</body>
+</html>
