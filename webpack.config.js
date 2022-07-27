@@ -10,7 +10,7 @@ module.exports={
     output:{  //打包完成后的选项
         publicPath:"./", // 设置静态路径
         filename:'okpack.js', //打包之后的js文件名
-        path:path.resolve(__dirname,'wenjianjia') //两个参数，第一个是打包后的文件夹存放位置，__dirname代表根目录，第二个代表生成的新的js文件所在的文件夹的路径
+        path:path.resolve(__dirname,'public') //两个参数，第一个是打包后的文件夹存放位置，__dirname代表根目录，第二个代表生成的新的js文件所在的文件夹的路径
     },
     plugins:[htmlpack], //打包html所需要的插件
     module:{
