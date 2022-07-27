@@ -32,5 +32,37 @@ module.exports={
                     loader:"html-loader"
             },
         ]
-    }
+    },
+    mode: 'development', //生产环境
 }
+
+// //resolve 用来拼接绝对路径的方法
+// const {resolve} = require('path')
+// let htmlpackplu=require('html-webpack-plugin')//引入HTML模块
+// const HtmlwebpackPlugin = require('html-webpack-plugin');
+// let htmlpack=new htmlpackplu({
+//     template:'./index.html', //html文件路径
+//     filename:'index.html' //打包后的名字
+// })
+// module.exports = {
+//     //webpack配置
+//     //入口起点
+//     entry: './MVVM.js',
+//     //输出
+//     output: {
+//         //输出文件名
+//         filename: 'built.js',
+//         //输出路径
+//         //__dirname nodejs的变量,代表当前文件的目录绝对路径
+//         path: resolve(__dirname, 'build')
+//     },
+//
+//     //plugins的配置
+//     plugins: [
+//         htmlpack
+//     ],
+// //模式
+//     mode: 'development', //生产环境
+//     // mode:'production,'//开发环境
+//
+// }
